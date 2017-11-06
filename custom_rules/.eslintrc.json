@@ -1,0 +1,32 @@
+{
+    "extends": "airbnb",
+    "globals": {
+        "AssetsLoader": false,
+        "sbGoogleAnalytics": false,
+        "setBbClientState": false,
+        "getBbClientState": false,
+        "bbClientStateSubscribe": false,
+        "onBbClientStateUpdate": false,
+        "offBbClientStateUpdate": false,
+        "bbModal_open": false,
+        "bbModal_close": false,
+        "bbModal_changePage": false,
+        "bbModal_init2ndModal": false,
+        "bbModal_end2ndModalMode": false,
+        "bbRegistrationModal": false
+    },
+    "rules": {
+        "max-len": ["error", 80],
+        "indent": ["error", 4],
+        "prefer-template": "off",
+        "comma-dangle": ["error", {
+            "arrays": "always-multiline",
+            "objects": "always-multiline",
+            "imports": "never",
+            "exports": "never",
+            "functions": "ignore"
+        }],
+        "object-shorthand": "off",
+        "no-plusplus": "off"
+    }
+}
