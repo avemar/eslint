@@ -41,6 +41,7 @@
     "cross-spawn": "^5.1.0",
     "debug": "^3.0.1",
     "doctrine": "^2.0.0",
+    "eslint": "^4.10.0",
     "eslint-scope": "^3.7.1",
     "espree": "^3.5.1",
     "esquery": "^1.0.0",
@@ -73,6 +74,7 @@
     "text-table": "~0.2.0"
   },
   "devDependencies": {
+    "babel-eslint": "^8.0.2",
     "babel-polyfill": "^6.23.0",
     "babel-preset-es2015": "^6.24.1",
     "babelify": "^7.3.0",
