@@ -1,4 +1,7 @@
 {
+    "plugins": [
+        "max-len-2"
+    ],
     "extends": "airbnb",
     "globals": {
         "AssetsLoader": false,
@@ -16,7 +19,8 @@
         "bbRegistrationModal": false
     },
     "rules": {
-        "max-len": ["error", 80],
+        "max-len": ["error", 120],
+        "max-len-2/max-len-2": ["warn", 80],
         "indent": ["error", 4],
         "prefer-template": "off",
         "comma-dangle": ["error", {
