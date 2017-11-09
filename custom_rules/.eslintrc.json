@@ -27,6 +27,7 @@
             "functions": "ignore"
         }],
         "object-shorthand": "off",
-        "no-plusplus": "off"
+        "no-plusplus": "off",
+        "linebreak-style": "off"
     }
 }
