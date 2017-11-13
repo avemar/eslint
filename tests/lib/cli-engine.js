@@ -291,9 +291,9 @@ describe("CLIEngine", () => {
                         fixableErrorCount: 0,
                         fixableWarningCount: 0,
                         diffErrorCount: 0,
+                        diffWarningCount: 0,
                         diffFixableErrorCount: 0,
                         diffFixableWarningCount: 0,
-                        diffWarningCount: 0,
                         output: "var bar = foo;"
                     }
                 ],
@@ -369,9 +369,9 @@ describe("CLIEngine", () => {
                         fixableErrorCount: 0,
                         fixableWarningCount: 0,
                         diffErrorCount: 0,
+                        diffWarningCount: 0,
                         diffFixableErrorCount: 0,
                         diffFixableWarningCount: 0,
-                        diffWarningCount: 0,
                         source: "var bar = foo"
                     }
                 ],
@@ -415,9 +415,9 @@ describe("CLIEngine", () => {
                         fixableErrorCount: 0,
                         fixableWarningCount: 0,
                         diffErrorCount: 0,
+                        diffWarningCount: 0,
                         diffFixableErrorCount: 0,
                         diffFixableWarningCount: 0,
-                        diffWarningCount: 0,
                         output: "var bar = foothis is a syntax error."
                     }
                 ],
@@ -461,9 +461,9 @@ describe("CLIEngine", () => {
                         fixableErrorCount: 0,
                         fixableWarningCount: 0,
                         diffErrorCount: 0,
+                        diffWarningCount: 0,
                         diffFixableErrorCount: 0,
                         diffFixableWarningCount: 0,
-                        diffWarningCount: 0,
                         source: "var bar ="
                     }
                 ],
@@ -553,9 +553,9 @@ describe("CLIEngine", () => {
                         fixableErrorCount: 0,
                         fixableWarningCount: 0,
                         diffErrorCount: 0,
+                        diffWarningCount: 0,
                         diffFixableErrorCount: 0,
                         diffFixableWarningCount: 0,
-                        diffWarningCount: 0,
                         source: "var bar = foothis is a syntax error.\n return bar;"
                     }
                 ],
@@ -1400,9 +1400,9 @@ describe("CLIEngine", () => {
                             fixableErrorCount: 0,
                             fixableWarningCount: 0,
                             diffErrorCount: 0,
+                            diffWarningCount: 0,
                             diffFixableErrorCount: 0,
                             diffFixableWarningCount: 0,
-                            diffWarningCount: 0,
                             output: "true ? \"yes\" : \"no\";\n"
                         },
                         {
@@ -1413,9 +1413,9 @@ describe("CLIEngine", () => {
                             fixableErrorCount: 0,
                             fixableWarningCount: 0,
                             diffErrorCount: 0,
+                            diffWarningCount: 0,
                             diffFixableErrorCount: 0,
-                            diffFixableWarningCount: 0,
-                            diffWarningCount: 0
+                            diffFixableWarningCount: 0
                         },
                         {
                             filePath: fs.realpathSync(path.resolve(fixtureDir, "fixmode/quotes-semi-eqeqeq.js")),
@@ -1436,9 +1436,9 @@ describe("CLIEngine", () => {
                             fixableErrorCount: 0,
                             fixableWarningCount: 0,
                             diffErrorCount: 0,
+                            diffWarningCount: 0,
                             diffFixableErrorCount: 0,
                             diffFixableWarningCount: 0,
-                            diffWarningCount: 0,
                             output: "var msg = \"hi\";\nif (msg == \"hi\") {\n\n}\n"
                         },
                         {
@@ -1462,9 +1462,9 @@ describe("CLIEngine", () => {
                             fixableErrorCount: 0,
                             fixableWarningCount: 0,
                             diffErrorCount: 0,
+                            diffWarningCount: 0,
                             diffFixableErrorCount: 0,
                             diffFixableWarningCount: 0,
-                            diffWarningCount: 0,
                             output: "var msg = \"hi\" + foo;\n"
                         }
                     ],
@@ -3076,9 +3076,9 @@ describe("CLIEngine", () => {
                             fixableErrorCount: 0,
                             fixableWarningCount: 0,
                             diffErrorCount: 0,
+                            diffWarningCount: 0,
                             diffFixableErrorCount: 0,
                             diffFixableWarningCount: 0,
-                            diffWarningCount: 0,
                             source: "/* eslint-disable */"
                         }
                     ],
