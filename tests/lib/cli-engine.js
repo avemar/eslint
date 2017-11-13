@@ -290,6 +290,10 @@ describe("CLIEngine", () => {
                         warningCount: 0,
                         fixableErrorCount: 0,
                         fixableWarningCount: 0,
+                        diffErrorCount: 0,
+                        diffWarningCount: 0,
+                        diffFixableErrorCount: 0,
+                        diffFixableWarningCount: 0,
                         output: "var bar = foo;"
                     }
                 ],
@@ -356,13 +360,18 @@ describe("CLIEngine", () => {
                                 endLine: 1,
                                 endColumn: 14,
                                 nodeType: "Identifier",
-                                source: "var bar = foo"
+                                source: "var bar = foo",
+                                isDiff: false
                             }
                         ],
                         errorCount: 1,
                         warningCount: 0,
                         fixableErrorCount: 0,
                         fixableWarningCount: 0,
+                        diffErrorCount: 0,
+                        diffWarningCount: 0,
+                        diffFixableErrorCount: 0,
+                        diffFixableWarningCount: 0,
                         source: "var bar = foo"
                     }
                 ],
@@ -405,6 +414,10 @@ describe("CLIEngine", () => {
                         warningCount: 0,
                         fixableErrorCount: 0,
                         fixableWarningCount: 0,
+                        diffErrorCount: 0,
+                        diffWarningCount: 0,
+                        diffFixableErrorCount: 0,
+                        diffFixableWarningCount: 0,
                         output: "var bar = foothis is a syntax error."
                     }
                 ],
@@ -447,6 +460,10 @@ describe("CLIEngine", () => {
                         warningCount: 0,
                         fixableErrorCount: 0,
                         fixableWarningCount: 0,
+                        diffErrorCount: 0,
+                        diffWarningCount: 0,
+                        diffFixableErrorCount: 0,
+                        diffFixableWarningCount: 0,
                         source: "var bar ="
                     }
                 ],
@@ -535,6 +552,10 @@ describe("CLIEngine", () => {
                         warningCount: 0,
                         fixableErrorCount: 0,
                         fixableWarningCount: 0,
+                        diffErrorCount: 0,
+                        diffWarningCount: 0,
+                        diffFixableErrorCount: 0,
+                        diffFixableWarningCount: 0,
                         source: "var bar = foothis is a syntax error.\n return bar;"
                     }
                 ],
@@ -1378,6 +1399,10 @@ describe("CLIEngine", () => {
                             warningCount: 0,
                             fixableErrorCount: 0,
                             fixableWarningCount: 0,
+                            diffErrorCount: 0,
+                            diffWarningCount: 0,
+                            diffFixableErrorCount: 0,
+                            diffFixableWarningCount: 0,
                             output: "true ? \"yes\" : \"no\";\n"
                         },
                         {
@@ -1386,7 +1411,11 @@ describe("CLIEngine", () => {
                             errorCount: 0,
                             warningCount: 0,
                             fixableErrorCount: 0,
-                            fixableWarningCount: 0
+                            fixableWarningCount: 0,
+                            diffErrorCount: 0,
+                            diffWarningCount: 0,
+                            diffFixableErrorCount: 0,
+                            diffFixableWarningCount: 0
                         },
                         {
                             filePath: fs.realpathSync(path.resolve(fixtureDir, "fixmode/quotes-semi-eqeqeq.js")),
@@ -1398,13 +1427,18 @@ describe("CLIEngine", () => {
                                     nodeType: "BinaryExpression",
                                     ruleId: "eqeqeq",
                                     severity: 2,
-                                    source: "if (msg == \"hi\") {"
+                                    source: "if (msg == \"hi\") {",
+                                    isDiff: false
                                 }
                             ],
                             errorCount: 1,
                             warningCount: 0,
                             fixableErrorCount: 0,
                             fixableWarningCount: 0,
+                            diffErrorCount: 0,
+                            diffWarningCount: 0,
+                            diffFixableErrorCount: 0,
+                            diffFixableWarningCount: 0,
                             output: "var msg = \"hi\";\nif (msg == \"hi\") {\n\n}\n"
                         },
                         {
@@ -1419,13 +1453,18 @@ describe("CLIEngine", () => {
                                     nodeType: "Identifier",
                                     ruleId: "no-undef",
                                     severity: 2,
-                                    source: "var msg = \"hi\" + foo;"
+                                    source: "var msg = \"hi\" + foo;",
+                                    isDiff: false
                                 }
                             ],
                             errorCount: 1,
                             warningCount: 0,
                             fixableErrorCount: 0,
                             fixableWarningCount: 0,
+                            diffErrorCount: 0,
+                            diffWarningCount: 0,
+                            diffFixableErrorCount: 0,
+                            diffFixableWarningCount: 0,
                             output: "var msg = \"hi\" + foo;\n"
                         }
                     ],
@@ -3036,6 +3075,10 @@ describe("CLIEngine", () => {
                             warningCount: 0,
                             fixableErrorCount: 0,
                             fixableWarningCount: 0,
+                            diffErrorCount: 0,
+                            diffWarningCount: 0,
+                            diffFixableErrorCount: 0,
+                            diffFixableWarningCount: 0,
                             source: "/* eslint-disable */"
                         }
                     ],
