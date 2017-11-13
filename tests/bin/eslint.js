@@ -90,6 +90,10 @@ describe("bin/eslint.js", () => {
                     warningCount: 0,
                     fixableErrorCount: 0,
                     fixableWarningCount: 0,
+                    diffErrorCount: 0,
+                    diffWarningCount: 0,
+                    diffFixableErrorCount: 0,
+                    diffFixableWarningCount: 0,
                     output: "var foo = bar;\n"
                 }
             ]);
