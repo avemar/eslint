@@ -2539,7 +2539,8 @@ describe("Linter", () => {
                     column: 1,
                     severity: 1,
                     source: "var answer = 6 * 7;",
-                    nodeType: null
+                    nodeType: null,
+                    isDiff: false
                 }
             );
         });
